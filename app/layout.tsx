@@ -6,17 +6,17 @@ import "./globals.css"
 const InstrumentSansReg = localFont({
   src: "./fonts/static/InstrumentSans-Regular.ttf",
   variable: "--font-instrument-sans-regular",
-  weight: "100 400",
+  weight: "400",
 })
 const InstrumentSansBold = localFont({
   src: "./fonts/static/InstrumentSans-Bold.ttf",
   variable: "--font-instrument-sans-bold",
-  weight: "700 900",
+  weight: "700",
 })
 const InstrumentSansSemiBold = localFont({
   src: "./fonts/static/InstrumentSans-SemiBold.ttf",
   variable: "--font-instrument-sans-semibold",
-  weight: "500 600",
+  weight: "600",
 })
 
 export const metadata: Metadata = {

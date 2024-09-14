@@ -8,6 +8,14 @@ export default function Home() {
         <Header />
         <MainContainer />
       </div>
+      <div className="fixed bottom-1 left-16 z-50 flex size-6 items-center justify-center rounded-full bg-gray-800 p-3 font-mono text-xs text-white">
+        <div className="block sm:hidden">xs</div>
+        <div className="hidden sm:block md:hidden">sm</div>
+        <div className="hidden md:block lg:hidden">md</div>
+        <div className="hidden lg:block xl:hidden">lg</div>
+        <div className="hidden xl:block 2xl:hidden">xl</div>
+        <div className="hidden 2xl:block">2xl</div>
+      </div>
     </main>
     // <div className="grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 p-8 pb-20 font-[family-name:var(--font-instrument-sans-regular)] sm:p-20">
     //   <main className="row-start-2 flex flex-col items-center gap-8 sm:items-start">

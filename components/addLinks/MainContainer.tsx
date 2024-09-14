@@ -5,7 +5,7 @@ import { LinksDisplayContainer } from "./LinksDisplayContainer"
 
 export function MainContainer() {
   return (
-    <div className="flex h-[calc(100vh-126px)] gap-6 px-6 pb-6">
+    <div className="flex h-fit gap-6 p-4 sm:px-6 sm:pb-6 sm:pt-0">
       <LinksDisplayContainer />
       <LinksAddContainer />
     </div>

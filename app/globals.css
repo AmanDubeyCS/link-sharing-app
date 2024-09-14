@@ -20,3 +20,12 @@
 .font-semibold-sans {
   font-family: var(--font-instrument-sans-semibold);
 }
+
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
