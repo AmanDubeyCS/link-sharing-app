@@ -54,13 +54,12 @@ export function LinksAddContainer() {
         link: item.link,
         platform: item.platform,
       }))
-      // console.log(links)
       useStore.getState().setLinks(links)
     }
   }
 
   return (
-    <div className="flex size-full flex-1 flex-col gap-[2px]">
+    <div className="flex size-full flex-1 flex-col gap-[2px] lg:min-w-[600px]">
       <div className="flex size-full flex-col gap-10 rounded-t-xl bg-white p-6 sm:p-10">
         <div className="flex flex-col gap-2">
           <p className="font-bold-sans text-[24px] leading-[150%] text-[#333333] sm:text-[32px]">

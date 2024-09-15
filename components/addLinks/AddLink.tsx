@@ -33,7 +33,6 @@ export function AddLink({
   removeItem,
   errorMessages,
 }: AddLinkProps) {
-  console.log(errorMessages)
   const platformsList = [
     {
       platform: "GitHub",
@@ -122,8 +121,7 @@ export function AddLink({
           <Icons.linkIcon className="size-[16px] text-[#737373]" />
           <input
             type="text"
-            name=""
-            id=""
+            placeholder="e.g. https://www.github.com/johnappleseed"
             className="w-full outline-none"
             value={link}
             onChange={(e) => onLinkChange(id, e.target.value)}
