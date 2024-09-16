@@ -1,6 +1,7 @@
 "use client"
 
 import React from "react"
+import { useStore } from "@/store/listdataStore"
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd"
 
 import { Icons } from "../icons"
@@ -27,7 +28,7 @@ export function DnDContainer({
     }
     setItems((prevItems) => [...prevItems, newItem])
   }
-
+  // update Ids when changing the place of items
   const updateItemIds = (
     items: { id: string; link: string; platform: string }[]
   ) => {
@@ -62,7 +63,7 @@ export function DnDContainer({
       )
     )
   }
-
+  // update IDs when removing an item
   const updateItemId = (
     items: { id: string; link: string; platform: string }[]
   ) => {
@@ -74,7 +75,11 @@ export function DnDContainer({
 
   const removeItem = (id: string) => {
     const filteredItems = items.filter((item) => item.id !== id)
-    setItems(updateItemId(filteredItems))
+    const updatedItems = updateItemId(filteredItems)
+    setItems(updatedItems)
+    if (items.length === 1) {
+      useStore.getState().setLinks(updatedItems)
+    }
   }
 
   return (

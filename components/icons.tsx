@@ -1,10 +1,7 @@
 import { LucideProps } from "lucide-react"
 
-interface Props {
-  className?: string
-}
 export const Icons = {
-  logoIcon: (props: Props) => (
+  logoIcon: (props: LucideProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
@@ -28,7 +25,7 @@ export const Icons = {
     </svg>
   ),
 
-  logoSmallIcon: (props: Props) => (
+  logoSmallIcon: (props: LucideProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
@@ -44,7 +41,7 @@ export const Icons = {
     </svg>
   ),
 
-  linkIcon: (props: Props) => (
+  linkIcon: (props: LucideProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="currentColor"
@@ -55,7 +52,7 @@ export const Icons = {
     </svg>
   ),
 
-  profileIcon: (props: Props) => (
+  profileIcon: (props: LucideProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="currentColor"
@@ -94,7 +91,7 @@ export const Icons = {
     </svg>
   ),
 
-  emptyLinksContainer: (props: Props) => (
+  emptyLinksContainer: (props: LucideProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
@@ -179,7 +176,7 @@ export const Icons = {
     </svg>
   ),
 
-  eyeIcon: (props: Props) => (
+  eyeIcon: (props: LucideProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
@@ -193,7 +190,7 @@ export const Icons = {
     </svg>
   ),
 
-  dragdropIcon: (props: Props) => (
+  dragdropIcon: (props: LucideProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="12"
